@@ -1,0 +1,364 @@
+Python 3.4.1 (v3.4.1:c0e311e010fc, May 18 2014, 10:38:22) [MSC v.1600 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> ================================ RESTART ================================
+>>> 
+Press any key to load red wine data...
+1599 rows, 11 features loaded!
+=============================================
+Press any key to start linear regression...
+linear regression MAD: 0.4165, time elapsed:  0.007589344688107069
+confusion matrix for linear regression:
+   3  4    5    6   7  8  9
+3  0  0    9    1   0  0  0
+4  0  0   31   21   1  0  0
+5  0  3  458  219   0  1  0
+6  0  0  160  449  29  0  0
+7  0  0    5  145  49  0  0
+8  0  0    0   10   8  0  0
+9  0  0    0    0   0  0  0
+=============================================
+Press any key to start regularizer linear regression...
+Lasso MAD: 0.4728, time elapsed:  0.004299372478018704
+Ridge MAD: 0.4071, time elapsed:  0.004546150785192715
+ElasticNet MAD: 0.5854, time elapsed:  0.004301398572494897
+confusion matrix for Lasso:
+   3  4    5    6  7  8  9
+3  0  0    2    8  0  0  0
+4  0  0   16   37  0  0  0
+5  0  0  389  292  0  0  0
+6  0  0  159  479  0  0  0
+7  0  0    6  193  0  0  0
+8  0  0    0   18  0  0  0
+9  0  0    0    0  0  0  0
+confusion matrix for ElasticNet:
+   3  4    5    6  7  8  9
+3  0  0    0   10  0  0  0
+4  0  0    2   51  0  0  0
+5  0  0  121  560  0  0  0
+6  0  0   19  619  0  0  0
+7  0  0    6  193  0  0  0
+8  0  0    0   18  0  0  0
+9  0  0    0    0  0  0  0
+confusion matrix for Ridge:
+   3  4    5    6   7  8  9
+3  0  0    9    1   0  0  0
+4  0  0   30   23   0  0  0
+5  0  3  461  216   1  0  0
+6  0  0  160  453  25  0  0
+7  0  0    5  145  49  0  0
+8  0  0    0   10   8  0  0
+9  0  0    0    0   0  0  0
+=============================================
+Press any key to select best K features by univariate feature selection...
+(1599, 6) [ 0  1  2  5  6 10]
+=============================================
+Press any key to start linear regression with above K features...
+linear regression MAD: 0.4165, time elapsed:  0.005765049221939655
+confusion matrix for linear regression:
+   3  4    5    6   7  8  9
+3  0  0    9    1   0  0  0
+4  0  0   33   20   0  0  0
+5  0  4  464  210   3  0  0
+6  0  0  176  429  33  0  0
+7  0  0    7  153  39  0  0
+8  0  0    0   11   7  0  0
+9  0  0    0    0   0  0  0
+=============================================
+Press any key to start regularizer linear regression with above K features...
+Lasso MAD: 0.4728, time elapsed:  0.0037713722575798414
+Ridge MAD: 0.4184, time elapsed:  0.0032069023365721705
+ElasticNet MAD: 0.5854, time elapsed:  0.003793254077919528
+confusion matrix for Lasso:
+   3  4    5    6  7  8  9
+3  0  0    2    8  0  0  0
+4  0  0   16   37  0  0  0
+5  0  0  389  292  0  0  0
+6  0  0  159  479  0  0  0
+7  0  0    6  193  0  0  0
+8  0  0    0   18  0  0  0
+9  0  0    0    0  0  0  0
+confusion matrix for ElasticNet:
+   3  4    5    6  7  8  9
+3  0  0    0   10  0  0  0
+4  0  0    2   51  0  0  0
+5  0  0  121  560  0  0  0
+6  0  0   19  619  0  0  0
+7  0  0    6  193  0  0  0
+8  0  0    0   18  0  0  0
+9  0  0    0    0  0  0  0
+confusion matrix for Ridge:
+   3  4    5    6   7  8  9
+3  0  0    9    1   0  0  0
+4  0  0   32   21   0  0  0
+5  0  2  466  211   2  0  0
+6  0  0  175  431  32  0  0
+7  0  0    5  155  39  0  0
+8  0  0    0   11   7  0  0
+9  0  0    0    0   0  0  0
+=============================================
+Press any key to start feature selection by importance with linear regression...
+Feature Ranking Lasso MAD: 0.6484, time elapsed: 0.03117227395066635
+Feature Ranking Ridge MAD: 0.5034, time elapsed: 0.04587807287618695
+Feature Ranking ElasticNet MAD: 0.6455, time elapsed: 0.03876891257888637
+confusion matrix for Feature Ranking ElasticNet:
+   3  4    5    6  7  8  9
+3  0  0    0   10  0  0  0
+4  0  0    7   46  0  0  0
+5  0  0  210  471  0  0  0
+6  0  0   76  562  0  0  0
+7  0  2   14  183  0  0  0
+8  0  0    2   16  0  0  0
+9  0  0    0    0  0  0  0
+confusion matrix for Feature Ranking Lasso:
+   3  4    5    6  7  8  9
+3  0  0    0   10  0  0  0
+4  0  0    6   47  0  0  0
+5  0  0  214  467  0  0  0
+6  0  0   79  559  0  0  0
+7  0  2   15  182  0  0  0
+8  0  0    3   15  0  0  0
+9  0  0    0    0  0  0  0
+confusion matrix for Feature Ranking Ridge:
+   3  4    5    6   7  8  9
+3  0  1    8    1   0  0  0
+4  0  1   33   19   0  0  0
+5  0  1  490  186   4  0  0
+6  0  0  201  410  27  0  0
+7  0  0    7  160  32  0  0
+8  0  0    0   12   6  0  0
+9  0  0    0    0   0  0  0
+=============================================
+Press any key to start regularizer nonlinear regression...
+Logistic l1 MAD: 0.4428, time elapsed:  1.4951969404352532
+Logistic l2 MAD: 0.4447, time elapsed:  0.19619159073539905
+BayesianRidge MAD: 0.4165, time elapsed:  0.010206248313277655
+confusion matrix for Logistic l1:
+   3  4    5    6   7  8  9
+3  0  0    9    1   0  0  0
+4  0  0   36   15   2  0  0
+5  0  0  526  149   6  0  0
+6  0  0  219  377  42  0  0
+7  0  0   16  126  57  0  0
+8  0  0    1    9   8  0  0
+9  0  0    0    0   0  0  0
+confusion matrix for BayesianRidge:
+   3  4    5    6   7  8  9
+3  0  0    9    1   0  0  0
+4  0  0   29   24   0  0  0
+5  0  3  463  214   1  0  0
+6  0  0  161  455  22  0  0
+7  0  0    5  148  46  0  0
+8  0  0    0   10   8  0  0
+9  0  0    0    0   0  0  0
+confusion matrix for Logistic l2:
+   3  4    5    6   7  8  9
+3  0  0    9    1   0  0  0
+4  0  0   36   16   1  0  0
+5  0  0  526  148   7  0  0
+6  0  0  223  376  39  0  0
+7  0  0   15  132  52  0  0
+8  0  0    1    9   8  0  0
+9  0  0    0    0   0  0  0
+=============================================
+Press any key to start support vector regression...
+support vector with linear kernel MAD: 0.4184, time elapsed:  42.615665681444455
+support vector with rbf kernel MAD: 0.5441, time elapsed:  1.1939576189661878
+confusion matrix for support vector with rbf kernel:
+   3  4    5    6   7  8  9
+3  0  0    7    3   0  0  0
+4  0  0   40   13   0  0  0
+5  0  1  517  159   4  0  0
+6  0  0   95  536   7  0  0
+7  0  0    7  118  74  0  0
+8  0  0    1   10   7  0  0
+9  0  0    0    0   0  0  0
+confusion matrix for support vector with linear kernel:
+   3  4    5    6   7  8  9
+3  0  0    9    1   0  0  0
+4  0  0   35   17   1  0  0
+5  0  3  489  185   3  1  0
+6  0  0  198  399  41  0  0
+7  0  0    8  128  63  0  0
+8  0  0    0    9   9  0  0
+9  0  0    0    0   0  0  0
+Red winecx Finished!
+Press any key to load white wine data...
+4898 rows, 11 features loaded!
+=============================================
+Press any key to start linear regression...
+linear regression MAD: 0.5214, time elapsed:  0.010409262979763412
+confusion matrix for linear regression:
+   3  4    5     6    7  8  9
+3  0  1    7    10    2  0  0
+4  0  4   87    69    3  0  0
+5  0  0  578   853   26  0  0
+6  1  0  289  1609  299  0  0
+7  0  0   36   535  308  1  0
+8  0  0    9    83   83  0  0
+9  0  0    0     1    4  0  0
+=============================================
+Press any key to start regularizer linear regression...
+Lasso MAD: 0.5662, time elapsed:  0.008922109634397657
+Ridge MAD: 0.5184, time elapsed:  0.007126179490896334
+ElasticNet MAD: 0.5600, time elapsed:  0.01181132035713972
+confusion matrix for Lasso:
+   3  4    5     6   7  8  9
+3  0  0    4    14   2  0  0
+4  0  0   26   136   1  0  0
+5  0  0  132  1322   3  0  0
+6  0  0   93  2090  15  0  0
+7  0  0   43   806  31  0  0
+8  0  0    0   165  10  0  0
+9  0  0    0     4   1  0  0
+confusion matrix for ElasticNet:
+   3  4   5     6  7  8  9
+3  0  0   2    18  0  0  0
+4  0  0   9   154  0  0  0
+5  0  0  49  1408  0  0  0
+6  0  0  55  2143  0  0  0
+7  0  0   1   879  0  0  0
+8  0  0   0   175  0  0  0
+9  0  0   0     5  0  0  0
+confusion matrix for Ridge:
+   3  4    5     6    7  8  9
+3  0  1    6    12    1  0  0
+4  0  3   81    76    3  0  0
+5  0  1  580   851   25  0  0
+6  0  0  277  1627  294  0  0
+7  0  0   39   546  295  0  0
+8  0  0    9    86   80  0  0
+9  0  0    0     1    4  0  0
+=============================================
+Press any key to select best K features by univariate feature selection...
+(4898, 6) [ 0  1  3  5  6 10]
+=============================================
+Press any key to start linear regression with above K features...
+linear regression MAD: 0.5135, time elapsed:  0.009420123656596502
+confusion matrix for linear regression:
+   3  4    5     6    7  8  9
+3  0  1    6    11    2  0  0
+4  0  4   86    70    3  0  0
+5  0  3  548   877   28  1  0
+6  0  0  251  1637  310  0  0
+7  0  0   30   562  288  0  0
+8  0  0    2    89   84  0  0
+9  0  0    0     2    3  0  0
+=============================================
+Press any key to start regularizer linear regression with above K features...
+Lasso MAD: 0.5662, time elapsed:  0.006598584489353243
+Ridge MAD: 0.5153, time elapsed:  0.005742356963807538
+ElasticNet MAD: 0.5600, time elapsed:  0.007151708281284641
+confusion matrix for Lasso:
+   3  4    5     6   7  8  9
+3  0  0    4    14   2  0  0
+4  0  0   26   136   1  0  0
+5  0  0  132  1322   3  0  0
+6  0  0   93  2090  15  0  0
+7  0  0   43   806  31  0  0
+8  0  0    0   165  10  0  0
+9  0  0    0     4   1  0  0
+confusion matrix for ElasticNet:
+   3  4   5     6  7  8  9
+3  0  0   2    18  0  0  0
+4  0  0   9   154  0  0  0
+5  0  0  49  1408  0  0  0
+6  0  0  55  2143  0  0  0
+7  0  0   1   879  0  0  0
+8  0  0   0   175  0  0  0
+9  0  0   0     5  0  0  0
+confusion matrix for Ridge:
+   3  4    5     6    7  8  9
+3  0  1    6    11    2  0  0
+4  0  4   86    70    3  0  0
+5  0  2  545   882   27  1  0
+6  0  0  256  1634  308  0  0
+7  0  0   30   563  287  0  0
+8  0  0    2    89   84  0  0
+9  0  0    0     2    3  0  0
+=============================================
+Press any key to start feature selection by importance with linear regression...
+Feature Ranking Lasso MAD: 0.5816, time elapsed: 0.059037151278758415
+Feature Ranking Ridge MAD: 0.5622, time elapsed: 0.03667919873636549
+Feature Ranking ElasticNet MAD: 0.5841, time elapsed: 0.054961864849772724
+confusion matrix for Feature Ranking ElasticNet:
+   3  4   5     6  7  8  9
+3  0  0   2    18  0  0  0
+4  0  0   9   154  0  0  0
+5  0  0  49  1408  0  0  0
+6  0  0  55  2143  0  0  0
+7  0  0   1   879  0  0  0
+8  0  0   0   175  0  0  0
+9  0  0   0     5  0  0  0
+confusion matrix for Feature Ranking Lasso:
+   3  4   5     6  7  8  9
+3  0  0   2    18  0  0  0
+4  0  0   1   162  0  0  0
+5  0  0  23  1434  0  0  0
+6  0  0  20  2178  0  0  0
+7  0  0   1   879  0  0  0
+8  0  0   0   175  0  0  0
+9  0  0   0     5  0  0  0
+confusion matrix for Feature Ranking Ridge:
+   3  4    5     6    7  8  9
+3  0  0    4    16    0  0  0
+4  0  0   72    89    2  0  0
+5  0  1  645   793   18  0  0
+6  0  0  357  1608  233  0  0
+7  0  0   62   590  228  0  0
+8  0  0   15    97   63  0  0
+9  0  0    0     1    4  0  0
+=============================================
+Press any key to start regularizer nonlinear regression...
+Logistic l1 MAD: 0.5098, time elapsed:  4.264002136314005
+Logistic l2 MAD: 0.5263, time elapsed:  0.7358767032363147
+BayesianRidge MAD: 0.5184, time elapsed:  0.016636666961119317
+confusion matrix for Logistic l1:
+   3  4    5     6    7  8  9
+3  0  0    7    11    1  1  0
+4  0  0   92    63    8  0  0
+5  0  0  761   674   22  0  0
+6  0  0  408  1545  245  0  0
+7  0  0   47   544  289  0  0
+8  0  0    9    83   83  0  0
+9  0  0    0     2    3  0  0
+confusion matrix for BayesianRidge:
+   3  4    5     6    7  8  9
+3  0  1    6    12    1  0  0
+4  0  3   81    76    3  0  0
+5  0  1  578   853   25  0  0
+6  0  0  274  1630  294  0  0
+7  0  0   39   548  293  0  0
+8  0  0    9    85   81  0  0
+9  0  0    0     1    4  0  0
+confusion matrix for Logistic l2:
+   3  4    5     6    7  8  9
+3  0  0    8    11    1  0  0
+4  0  0   89    62   12  0  0
+5  0  0  725   709   23  0  0
+6  0  0  390  1540  268  0  0
+7  0  0   37   566  277  0  0
+8  0  0    9    87   79  0  0
+9  0  0    0     3    2  0  0
+=============================================
+Press any key to start support vector regression...
+support vector with linear kernel MAD: 0.5172, time elapsed:  655.8932799308859
+support vector with rbf kernel MAD: 0.5968, time elapsed:  11.801967499823718
+confusion matrix for support vector with rbf kernel:
+   3   4     5     6    7   8  9
+3  0   3    13     4    0   0  0
+4  0  24    97    40    2   0  0
+5  0   0  1013   422   22   0  0
+6  0   0   117  1933  148   0  0
+7  0   0    30   327  523   0  0
+8  0   0     8    49   94  24  0
+9  0   0     0     3    2   0  0
+confusion matrix for support vector with linear kernel:
+   3  4    5     6    7  8  9
+3  0  1    7    10    1  1  0
+4  0  4   91    66    2  0  0
+5  0  6  664   758   29  0  0
+6  0  0  342  1544  312  0  0
+7  0  0   61   506  312  1  0
+8  0  0    9    83   83  0  0
+9  0  0    0     1    4  0  0
+>>> 
